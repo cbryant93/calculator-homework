@@ -23,5 +23,17 @@ if(calculator === 'a'){
   }
 
 }else{
-    throw ('Error');
+    var calculator = prompt("What would will you like to do with the numbers?: (pow)Power (rt)Square Root");
+
+  switch(calculator){
+  case 'rt': var x = parseInt(prompt('Enter a Value: ', '0'));
+              var num1 = Math.sqrt(x);
+  break;
+  case 'pow': var y = parseInt(prompt('Enter a Value: ', '0'));
+              var z = parseInt(prompt('Enter a Value: ', '0'));
+              var power = Math.pow(y,z);
+              alert(power);
+  break;
+  default: alert("What Happend");
+  }
 }
